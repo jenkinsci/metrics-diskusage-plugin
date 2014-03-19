@@ -32,15 +32,15 @@
     <version>1.520</version>
   </parent>
 
-  <artifactId>codahale-metrics-diskusage</artifactId>
-  <version>3.0.2-1-SNAPSHOT</version>
+  <artifactId>metrics-diskusage</artifactId>
+  <version>3.0-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
-  <name>Codahale Metrics Disk Usage Plugin</name>
+  <name>Metrics Disk Usage Plugin</name>
   <description>
-    This plugin adds metrics from the Disk Usage plugin to the Codahale Metrics.
+    This plugin adds metrics from the Disk Usage plugin to the Metrics.
   </description>
-  <url>http://wiki.jenkins-ci.org/display/JENKINS/Codahale+Metrics+Disk+Usage+Plugin</url>
+  <url>http://wiki.jenkins-ci.org/display/JENKINS/Metrics+Disk+Usage+Plugin</url>
   <licenses>
     <license>
       <name>The MIT license</name>
@@ -61,14 +61,13 @@
   </prerequisites>
 
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/codahale-metrics-diskusage-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/codahale-metrics-diskusage-plugin.git</developerConnection>
-    <url>http://github.com/jenkinsci/codahale-metrics-diskusage-plugin</url>
+    <connection>scm:git:git://github.com/jenkinsci/metrics-diskusage-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/metrics-diskusage-plugin.git</developerConnection>
+    <url>http://github.com/jenkinsci/metrics-diskusage-plugin</url>
     <tag>HEAD</tag>
   </scm>
 
   <properties>
-    <git.provider>git</git.provider>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -93,8 +92,8 @@
     <!-- plugin dependencies -->
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
-      <artifactId>codahale-metrics</artifactId>
-      <version>3.0.2-1-SNAPSHOT</version>
+      <artifactId>metrics</artifactId>
+      <version>3.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
@@ -151,24 +150,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
-        <version>2.4.2</version>
-        <configuration>
-          <providerImplementations>
-            <git>${git.provider}</git>
-          </providerImplementations>
-        </configuration>
-        <dependencies>
-          <dependency>
-            <groupId>org.apache.maven.scm</groupId>
-            <artifactId>maven-scm-provider-jgit</artifactId>
-            <version>1.9</version>
-          </dependency>
-          <dependency>
-            <groupId>org.apache.maven.scm</groupId>
-            <artifactId>maven-scm-provider-gitexe</artifactId>
-            <version>1.9</version>
-          </dependency>
-        </dependencies>
+        <version>2.5</version>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>

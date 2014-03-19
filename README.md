@@ -1,6 +1,7 @@
-# Codahale Metrics Disk Usage Plugin
+# Metrics Disk Usage Plugin
 
-This plugin adds metrics from the [Disk Usage](https://wiki.jenkins-ci.org/display/JENKINS/Disk+Usage+Plugin) plugin to the [Codahale Metrics](http://wiki.jenkins-ci.org/display/JENKINS/Codahale+Metrics+Plugin).
+This plugin adds metrics from the [Disk Usage](https://wiki.jenkins-ci.org/display/JENKINS/Disk+Usage+Plugin) plugin to
+the [Metrics](http://wiki.jenkins-ci.org/display/JENKINS/Metrics+Plugin).
 
 See also this [plugin's wiki page][wiki]
 
@@ -28,4 +29,4 @@ To test in a local Jenkins instance
 
     mvn hpi:run
 
-  [wiki]: http://wiki.jenkins-ci.org/display/JENKINS/Codahale+Metrics+Disk+Usage+Plugin
+  [wiki]: http://wiki.jenkins-ci.org/display/JENKINS/Metrics+Disk+Usage+Plugin

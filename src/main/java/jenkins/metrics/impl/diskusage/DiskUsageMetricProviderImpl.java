@@ -1,8 +1,8 @@
-package com.codahale.metrics.jenkins.diskusage;
+package jenkins.metrics.impl.diskusage;
 
 import com.codahale.metrics.Gauge;
 import com.codahale.metrics.MetricSet;
-import com.codahale.metrics.jenkins.MetricProvider;
+import jenkins.metrics.api.MetricProvider;
 import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Extension;
 import hudson.plugins.disk_usage.DiskUsagePlugin;
